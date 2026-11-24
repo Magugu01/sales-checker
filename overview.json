@@ -1,0 +1,274 @@
+{
+  "rootFolder": "c:\\Users\\prince.magugu\\Desktop\\salesmodel",
+  "analyzedAt": "2026-11-24T09:57:45.745Z",
+  "rootStructure": [
+    {
+      "name": ".gitignore",
+      "type": "file",
+      "size": 69,
+      "lines": 6
+    },
+    {
+      "name": "analyzer.py",
+      "type": "file",
+      "size": 17914,
+      "lines": 497
+    },
+    {
+      "name": "app.py",
+      "type": "file",
+      "size": 57746,
+      "lines": 1559
+    },
+    {
+      "name": "assets",
+      "type": "dir"
+    },
+    {
+      "name": "history",
+      "type": "dir"
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "size": 4939,
+      "lines": 99
+    },
+    {
+      "name": "reporting.py",
+      "type": "file",
+      "size": 11608,
+      "lines": 325
+    },
+    {
+      "name": "requirements.txt",
+      "type": "file",
+      "size": 88,
+      "lines": 7
+    },
+    {
+      "name": "storage.py",
+      "type": "file",
+      "size": 1864,
+      "lines": 64
+    },
+    {
+      "name": "tests",
+      "type": "dir"
+    },
+    {
+      "name": "__pycache__",
+      "type": "dir"
+    }
+  ],
+  "rootFileSnippets": {
+    "analyzer.py": [
+      "from __future__ import annotations",
+      "",
+      "import calendar",
+      "import re",
+      "import unicodedata",
+      "from dataclasses import dataclass",
+      "from datetime import date, timedelta",
+      "from io import BytesIO",
+      "from math import isclose",
+      "from statistics import median"
+    ],
+    "app.py": [
+      "from __future__ import annotations",
+      "",
+      "import calendar",
+      "from datetime import date, datetime",
+      "from pathlib import Path",
+      "",
+      "import pandas as pd",
+      "import plotly.express as px",
+      "import streamlit as st",
+      ""
+    ],
+    "README.md": [
+      "# Sala Analysis Model by IT-19",
+      "",
+      "A local Streamlit app for checking monthly branch sales workbooks. It detects",
+      "missing daily sales, highlights variance differences, and creates downloadable",
+      "Excel and PDF reports. Its hybrid corporate theme uses Farm & City forest green,",
+      "`#D9A441` warm gold, `#F5F7F3` soft white and `#26332D` charcoal. The sidebar",
+      "groups navigation into Overview, Sales Intelligence, Data and Reporting.",
+      "The interface is organized into five menu views. Upload or load a workbook in",
+      "the sidebar; the reporting period, readiness summary, and analysis controls then",
+      "appear in the main view. Use **Analyze full month** for a one-click monthly"
+    ],
+    "reporting.py": [
+      "from __future__ import annotations",
+      "",
+      "from datetime import date",
+      "from io import BytesIO",
+      "from typing import Any",
+      "from xml.sax.saxutils import escape",
+      "",
+      "import pandas as pd",
+      "from openpyxl import Workbook",
+      "from openpyxl.styles import Alignment, Font, PatternFill"
+    ],
+    "requirements.txt": [
+      "streamlit>=1.50",
+      "pandas>=2.0",
+      "openpyxl>=3.1",
+      "plotly>=5.24",
+      "reportlab>=4.2",
+      "pytest>=8.0",
+      ""
+    ],
+    "storage.py": [
+      "from __future__ import annotations",
+      "",
+      "import hashlib",
+      "import os",
+      "import re",
+      "import tempfile",
+      "from pathlib import Path",
+      "",
+      "from analyzer import format_month",
+      ""
+    ]
+  },
+  "importantFolders": [
+    {
+      "path": "assets",
+      "category": "assets",
+      "fileCount": 1
+    },
+    {
+      "path": "tests",
+      "category": "tests",
+      "fileCount": 3,
+      "primaryLanguage": "Python"
+    }
+  ],
+  "readmeParagraphs": {
+    "root": "# Sala Analysis Model by IT-19\r\n\r\nA local Streamlit app for checking monthly branch sales workbooks. It detects\r"
+  },
+  "totals": {
+    "numFiles": 15,
+    "numDirs": 10,
+    "totalSizeBytes": 3721193,
+    "totalLinesOfCode": 2689
+  },
+  "fileCategories": {
+    "other": 5,
+    "config": 1,
+    "source": 7,
+    "documentation": 2
+  },
+  "linesOfCodePerLanguage": {
+    "Python": 2689
+  },
+  "filesPerLanguage": {
+    "Python": 7
+  },
+  "projectTypes": [
+    "Python (requirements)"
+  ],
+  "frameworks": [
+    "Flask"
+  ],
+  "entryPoints": [],
+  "ciCdTools": [],
+  "packageManagers": [
+    "pip"
+  ],
+  "topLevelDirectories": [
+    {
+      "name": "tests",
+      "numFiles": 3,
+      "totalLoc": 244,
+      "dominantLanguage": "Python"
+    },
+    {
+      "name": "assets",
+      "numFiles": 1,
+      "totalLoc": 0
+    },
+    {
+      "name": "history",
+      "numFiles": 3,
+      "totalLoc": 0
+    }
+  ],
+  "detailedDirectories": [
+    {
+      "path": "tests",
+      "name": "tests",
+      "level": 1,
+      "numFiles": 3,
+      "totalLoc": 244,
+      "dominantLanguage": "Python",
+      "category": "Testing",
+      "description": "Testing module with 3 files (Python)",
+      "subdirectories": []
+    },
+    {
+      "path": "history",
+      "name": "history",
+      "level": 1,
+      "numFiles": 3,
+      "totalLoc": 0,
+      "category": "General",
+      "description": "General module with 3 files",
+      "subdirectories": []
+    },
+    {
+      "path": "assets",
+      "name": "assets",
+      "level": 1,
+      "numFiles": 1,
+      "totalLoc": 0,
+      "category": "General",
+      "description": "General module with 1 files",
+      "subdirectories": []
+    }
+  ],
+  "architecturalInsights": {
+    "coreApplications": [],
+    "entryPointDetails": [],
+    "serviceArchitecture": {
+      "microservices": [],
+      "monoliths": [],
+      "libraries": []
+    },
+    "layeredArchitecture": {
+      "presentation": [],
+      "business": [],
+      "data": [],
+      "infrastructure": []
+    }
+  },
+  "largeFiles": [
+    {
+      "path": "history\\2026-09.xlsx",
+      "sizeMb": 2.02
+    },
+    {
+      "path": "history\\2026-11.xlsx",
+      "sizeMb": 1
+    }
+  ],
+  "dependencies": {
+    "production": [
+      "streamlit",
+      "pandas",
+      "openpyxl",
+      "plotly",
+      "reportlab",
+      "pytest"
+    ],
+    "development": [],
+    "total": 6
+  },
+  "complexity": {
+    "averageFileSize": 179.26666666666668,
+    "maxFileSize": 21181.2352,
+    "nestedDepth": 0,
+    "estimatedComplexity": "low"
+  }
+}
